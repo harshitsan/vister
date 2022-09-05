@@ -3,6 +3,7 @@ $sizeSmall: 40vw;
 * {
 	text-align: center;
 	color: #ffffff;
+	font-family: "Plus Jakarta Sans", sans-serif;
 }
 body {
 	background-color: #090c08 !important;
@@ -20,6 +21,7 @@ body {
 		width: fit-content;
 		margin: auto;
 		padding: 0.5vw 0.7vw;
+		margin-top: 10vw;
 	}
 	.row {
 		width: 100%;
@@ -34,7 +36,7 @@ body {
 		margin: auto;
 	}
 	p.subhead {
-		font-size: 1.2vw;
+		font-size: 1vw;
 		padding-bottom: 10vw;
 		font-weight: normal;
 		color: #9c9c9c;
@@ -144,16 +146,16 @@ footer {
 	margin-top: 10vw;
 	background-color: #000000;
 	width: 100%;
-	padding: 1vw 6vw;
+	padding: 2vw 6vw;
 	.col {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 	}
 	p {
-		font-size: 1vw;
+		font-size: 0.6vw;
 	}
 }
 .logo {
-	width: 10vw;
+	width: 8vw;
 }

@@ -1,6 +1,7 @@
 * {
   text-align: center;
   color: #ffffff;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 body {
@@ -22,6 +23,7 @@ body .label {
   width: fit-content;
   margin: auto;
   padding: 0.5vw 0.7vw;
+  margin-top: 10vw;
 }
 body .row {
   width: 100%;
@@ -36,7 +38,7 @@ body h1.head {
   margin: auto;
 }
 body p.subhead {
-  font-size: 1.2vw;
+  font-size: 1vw;
   padding-bottom: 10vw;
   font-weight: normal;
   color: #9c9c9c;
@@ -144,7 +146,7 @@ footer {
   margin-top: 10vw;
   background-color: #000000;
   width: 100%;
-  padding: 1vw 6vw;
+  padding: 2vw 6vw;
 }
 footer .col {
   display: flex;
@@ -152,9 +154,9 @@ footer .col {
   justify-content: space-between;
 }
 footer p {
-  font-size: 1vw;
+  font-size: 0.6vw;
 }
 
 .logo {
-  width: 10vw;
+  width: 8vw;
 }/*# sourceMappingURL=style.css.map */
