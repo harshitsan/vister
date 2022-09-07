@@ -34,7 +34,7 @@ body {
 				align-self: baseline;
 			}
 			&.two {
-				bottom: -10vw;
+				bottom: 0vw;
 				right: -10vw;
 				justify-self: end;
 				align-self: end;
@@ -43,7 +43,7 @@ body {
 		}
 		&.yellow {
 			background: yellow;
-			bottom: -10vw;
+			bottom: 0vw;
 			left: -10vw;
 			justify-self: end;
 			align-self: end;
@@ -76,7 +76,7 @@ body {
 	}
 	p.subhead {
 		font-size: 1vw;
-		padding-bottom: 10vw;
+		// padding-bottom: 10vw;
 		font-weight: normal;
 		color: #9c9c9c;
 		span {
@@ -88,6 +88,8 @@ body {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		overflow: hidden;
+		padding: 10vw 0;
 	}
 	.image {
 		position: absolute;
@@ -182,7 +184,7 @@ body {
 }
 
 footer {
-	margin-top: 10vw;
+	// margin-top: 10vw;
 	background-color: #000000;
 	width: 100%;
 	padding: 2vw 6vw;

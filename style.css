@@ -34,14 +34,14 @@ body .bg-circle.green.one {
   align-self: baseline;
 }
 body .bg-circle.green.two {
-  bottom: -10vw;
+  bottom: 0vw;
   right: -10vw;
   justify-self: end;
   align-self: end;
 }
 body .bg-circle.yellow {
   background: yellow;
-  bottom: -10vw;
+  bottom: 0vw;
   left: -10vw;
   justify-self: end;
   align-self: end;
@@ -75,7 +75,6 @@ body h1.head .yellow {
 }
 body p.subhead {
   font-size: 1vw;
-  padding-bottom: 10vw;
   font-weight: normal;
   color: #9c9c9c;
 }
@@ -87,6 +86,8 @@ body #main {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  padding: 10vw 0;
 }
 body .image {
   position: absolute;
@@ -179,7 +180,6 @@ body #parent-circle .circle.teal {
   }
 }
 footer {
-  margin-top: 10vw;
   background-color: #000000;
   width: 100%;
   padding: 2vw 6vw;
