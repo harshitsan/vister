@@ -111,6 +111,10 @@ body {
 			color: #ffffff;
 		}
 	}
+	.main-parent {
+		overflow-x: hidden;
+		overflow-y: clip;
+	}
 	#main {
 		position: relative;
 		display: flex;
