@@ -1,3 +1,7 @@
+p {
+  margin-bottom: 0px !important;
+}
+
 * {
   text-align: center;
   color: #ffffff;
@@ -24,6 +28,14 @@ body .bg-circle {
   z-index: -1;
   border-radius: 50%;
 }
+@media screen and (max-width: 512px) {
+  body .bg-circle {
+    width: 100vw;
+    height: 100vw;
+    filter: blur(30vw);
+    -webkit-filter: blur(30vw);
+  }
+}
 body .bg-circle.green {
   background: #48bf84;
 }
@@ -38,6 +50,11 @@ body .bg-circle.green.two {
   right: -10vw;
   justify-self: end;
   align-self: end;
+}
+@media screen and (max-width: 512px) {
+  body .bg-circle.green.two {
+    display: none;
+  }
 }
 body .bg-circle.yellow {
   background: yellow;
@@ -57,6 +74,12 @@ body .label {
   padding: 0.5vw 0.7vw;
   margin-top: 5vw;
 }
+@media screen and (max-width: 512px) {
+  body .label {
+    font-size: 2vw;
+    margin: 20vw auto 3vw auto;
+  }
+}
 body .row {
   width: 100%;
 }
@@ -70,13 +93,26 @@ body h1.head {
   margin: auto;
   font-weight: 700;
 }
+@media screen and (max-width: 512px) {
+  body h1.head {
+    font-size: 6vw;
+    max-width: 70vw;
+  }
+}
 body h1.head .yellow {
-  color: #FFCC00 !important;
+  color: #ffcc00 !important;
 }
 body p.subhead {
   font-size: 1vw;
+  padding-top: 1vw;
   font-weight: normal;
   color: #9c9c9c;
+}
+@media screen and (max-width: 512px) {
+  body p.subhead {
+    padding-top: 3vw;
+    font-size: 3vw;
+  }
 }
 body p.subhead span {
   color: #ffffff;
@@ -88,6 +124,13 @@ body #main {
   align-items: center;
   overflow: hidden;
   padding: 10vw 0;
+}
+@media screen and (max-width: 512px) {
+  body #main {
+    transform: translateX(7%);
+    padding: 100vw 0;
+    scale: 3;
+  }
 }
 body .image {
   position: absolute;
@@ -107,6 +150,13 @@ body .circle2 {
   border: 1px solid #00d37f;
   border-radius: 50%;
 }
+@media screen and (max-width: 512px) {
+  body .circle2 {
+    scale: 1.5;
+    transform: translateX(28%);
+    border: 1px solid #00d37f;
+  }
+}
 body #parent-circle {
   position: relative;
   width: 54vw;
@@ -117,6 +167,14 @@ body #parent-circle {
   transition: transform 0.7s linear;
   -webkit-animation: rotate 15s infinite linear;
           animation: rotate 15s infinite linear;
+}
+@media screen and (max-width: 512px) {
+  body #parent-circle {
+    scale: 1.4;
+    margin-left: 38%;
+    -webkit-animation: none;
+            animation: none;
+  }
 }
 body #parent-circle .circle {
   display: block;
@@ -131,10 +189,23 @@ body #parent-circle .circle {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 512px) {
+  body #parent-circle .circle {
+    width: 14%;
+    height: 14%;
+    margin: -7%;
+  }
+}
 body #parent-circle .circle .content {
   -webkit-animation: rotate 15s infinite linear;
           animation: rotate 15s infinite linear;
   animation-direction: reverse;
+}
+@media screen and (max-width: 512px) {
+  body #parent-circle .circle .content {
+    -webkit-animation: none;
+            animation: none;
+  }
 }
 body #parent-circle .circle .content .icon {
   margin: auto;
@@ -143,32 +214,83 @@ body #parent-circle .circle .content .icon {
   display: flex;
   align-items: flex-end;
 }
+@media screen and (max-width: 512px) {
+  body #parent-circle .circle .content .icon {
+    width: 2vw;
+    height: 2vw;
+  }
+}
 body #parent-circle .circle .content .icon img {
   height: 100%;
 }
 body #parent-circle .circle .content .text {
-  padding: 1vw;
+  padding: 0.5vw;
   font-size: 1vw;
+}
+@media screen and (max-width: 512px) {
+  body #parent-circle .circle .content .text {
+    font-size: 0.7vw;
+  }
 }
 body #parent-circle .circle.blue {
   background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
   transform: translate(27vw);
 }
+@media screen and (max-width: 512px) {
+  body #parent-circle .circle.blue {
+    transform: rotate(115deg) translate(27vw) rotate(-90deg);
+  }
+  body #parent-circle .circle.blue .content {
+    transform: rotate(-25deg);
+  }
+}
 body #parent-circle .circle.pink {
   background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
   transform: rotate(90deg) translate(27vw) rotate(-90deg);
+}
+@media screen and (max-width: 512px) {
+  body #parent-circle .circle.pink {
+    transform: rotate(160deg) translate(27vw) rotate(-90deg);
+  }
+  body #parent-circle .circle.pink .content {
+    transform: rotate(-70deg);
+  }
 }
 body #parent-circle .circle.lime {
   background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
   transform: rotate(180deg) translate(27vw) rotate(-180deg);
 }
+@media screen and (max-width: 512px) {
+  body #parent-circle .circle.lime {
+    transform: rotate(200deg) translate(27vw) rotate(-90deg);
+  }
+  body #parent-circle .circle.lime .content {
+    transform: rotate(-110deg);
+  }
+}
 body #parent-circle .circle.orange {
   background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
   transform: rotate(270deg) translate(27vw) rotate(-270deg);
 }
+@media screen and (max-width: 512px) {
+  body #parent-circle .circle.orange {
+    transform: rotate(240deg) translate(27vw) rotate(-90deg);
+  }
+  body #parent-circle .circle.orange .content {
+    transform: rotate(-150deg);
+  }
+}
 body #parent-circle .circle.teal {
   background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
   transform: rotate(360deg) translate(27vw) rotate(-360deg);
+}
+@media screen and (max-width: 512px) {
+  body #parent-circle .circle.teal {
+    transform: rotate(210deg) translate(27vw) rotate(-90deg);
+  }
+  body #parent-circle .circle.teal .content {
+    transform: rotate(-120deg);
+  }
 }
 
 @-webkit-keyframes rotate {
@@ -184,6 +306,11 @@ footer {
   width: 100%;
   padding: 2vw 6vw;
 }
+@media screen and (max-width: 512px) {
+  footer {
+    padding: 3vw 6vw;
+  }
+}
 footer .col {
   display: flex;
   align-items: center;
@@ -192,7 +319,18 @@ footer .col {
 footer p {
   font-size: 0.6vw;
 }
+@media screen and (max-width: 512px) {
+  footer p {
+    font-size: 2.2vw;
+    padding-top: 2vw;
+  }
+}
 
 .logo {
   width: 8vw;
+}
+@media screen and (max-width: 512px) {
+  .logo {
+    width: 30vw;
+  }
 }/*# sourceMappingURL=style.css.map */

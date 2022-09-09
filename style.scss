@@ -1,5 +1,12 @@
 $size: 54vw;
 $sizeSmall: 40vw;
+$small: 512px;
+
+// @media screen and (max-width: $small) {
+p {
+	margin-bottom: 0px !important;
+}
+
 * {
 	text-align: center;
 	color: #ffffff;
@@ -25,6 +32,13 @@ body {
 		// filter: blur(500px);
 		z-index: -1;
 		border-radius: 50%;
+		@media screen and (max-width: $small) {
+			width: 100vw;
+			height: 100vw;
+
+			filter: blur(30vw);
+			-webkit-filter: blur(30vw);
+		}
 		&.green {
 			background: #48bf84;
 			&.one {
@@ -38,7 +52,9 @@ body {
 				right: -10vw;
 				justify-self: end;
 				align-self: end;
-
+				@media screen and (max-width: $small) {
+					display: none;
+				}
 			}
 		}
 		&.yellow {
@@ -57,6 +73,10 @@ body {
 		margin: auto;
 		padding: 0.5vw 0.7vw;
 		margin-top: 5vw;
+		@media screen and (max-width: $small) {
+			font-size: 2vw;
+			margin: 20vw auto 3vw auto;
+		}
 	}
 	.row {
 		width: 100%;
@@ -70,15 +90,23 @@ body {
 		padding: 1vw 0px 1vw 0px;
 		margin: auto;
 		font-weight: 700;
-		& .yellow{
-			color: #FFCC00 !important;
+		@media screen and (max-width: $small) {
+			font-size: 6vw;
+			max-width: 70vw;
+		}
+		& .yellow {
+			color: #ffcc00 !important;
 		}
 	}
 	p.subhead {
 		font-size: 1vw;
-		// padding-bottom: 10vw;
+		padding-top: 1vw;
 		font-weight: normal;
 		color: #9c9c9c;
+		@media screen and (max-width: $small) {
+			padding-top: 3vw;
+			font-size: 3vw;
+		}
 		span {
 			color: #ffffff;
 		}
@@ -90,12 +118,23 @@ body {
 		align-items: center;
 		overflow: hidden;
 		padding: 10vw 0;
+		@media screen and (max-width: $small) {
+			transform: translateX(7%);
+			padding: 100vw 0;
+			scale: 3;
+		}
 	}
 	.image {
 		position: absolute;
 		width: $size;
 		height: $size;
 		text-align: center;
+		@media screen and (max-width: $small) {
+			// width:150vw;
+			// height:150vw;
+			// scale: 2;
+		}
+
 		img {
 			transform: translate(0px, 30%);
 			width: 30%;
@@ -110,6 +149,12 @@ body {
 		text-align: center;
 		border: 1px solid #00d37f;
 		border-radius: 50%;
+		@media screen and (max-width: $small) {
+			// scale: 2;
+			scale: 1.5;
+			transform: translateX(28%);
+			border: 1px solid #00d37f;
+		}
 	}
 	#parent-circle {
 		position: relative;
@@ -120,6 +165,15 @@ body {
 		transform: rotate(0deg);
 		transition: transform 0.7s linear;
 		animation: rotate 15s infinite linear;
+		@media screen and (max-width: $small) {
+			// width: 150vw;
+			// width: 80vw;
+			// height: 80vw;
+			scale: 1.4;
+			margin-left: 38%;
+			animation: none;
+		}
+
 		.circle {
 			display: block;
 			position: absolute;
@@ -132,43 +186,90 @@ body {
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			@media screen and (max-width: $small) {
+				width: 14%;
+				height: 14%;
+				margin: -7%;
+			}
 			.content {
 				animation: rotate 15s infinite linear;
 				animation-direction: reverse;
+				@media screen and (max-width: $small) {
+					animation: none;
+				}
 				.icon {
 					margin: auto;
 					width: 3vw;
 					height: 3vw;
 					display: flex;
 					align-items: flex-end;
+					@media screen and (max-width: $small) {
+						width: 2vw;
+						height: 2vw;
+					}
+
 					img {
 						height: 100%;
 					}
 				}
 				.text {
-					padding: 1vw;
+					padding: 0.5vw;
 					font-size: 1vw;
+					@media screen and (max-width: $small) {
+						font-size: 0.7vw;
+					}
 				}
 			}
 			&.blue {
 				background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
 				transform: translate($size/2); // parent $size/2
+				@media screen and (max-width: $small) {
+					// transform: translate($size/4); // parent $size/2
+					transform: rotate(115deg) translate($size/2) rotate(-90deg);
+					.content {
+						transform: rotate(-25deg);
+					}
+				}
 			}
 			&.pink {
 				background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
 				transform: rotate(90deg) translate($size/2) rotate(-90deg);
+				@media screen and (max-width: $small) {
+					transform: rotate(160deg) translate($size/2) rotate(-90deg);
+					.content {
+						transform: rotate(-70deg);
+					}
+				}
 			}
 			&.lime {
 				background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
 				transform: rotate(90deg * 2) translate($size/2) rotate(-90deg * 2);
+				@media screen and (max-width: $small) {
+					transform: rotate(200deg) translate($size/2) rotate(-90deg);
+					.content {
+						transform: rotate(-110deg);
+					}
+				}
 			}
 			&.orange {
 				background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
 				transform: rotate(90deg * 3) translate($size/2) rotate(-90deg * 3);
+				@media screen and (max-width: $small) {
+					transform: rotate(240deg) translate($size/2) rotate(-90deg);
+					.content {
+						transform: rotate(-150deg);
+					}
+				}
 			}
 			&.teal {
 				background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
 				transform: rotate(90deg * 4) translate($size/2) rotate(-90deg * 4);
+				@media screen and (max-width: $small) {
+					transform: rotate(210deg) translate($size/2) rotate(-90deg);
+					.content {
+						transform: rotate(-120deg);
+					}
+				}
 			}
 		}
 	}
@@ -188,6 +289,10 @@ footer {
 	background-color: #000000;
 	width: 100%;
 	padding: 2vw 6vw;
+	@media screen and (max-width: $small) {
+		padding: 3vw 6vw;
+	}
+
 	.col {
 		display: flex;
 		align-items: center;
@@ -195,8 +300,15 @@ footer {
 	}
 	p {
 		font-size: 0.6vw;
+		@media screen and (max-width: $small) {
+			font-size: 2.2vw;
+			padding-top: 2vw;
+		}
 	}
 }
 .logo {
 	width: 8vw;
+	@media screen and (max-width: $small) {
+		width: 30vw;
+	}
 }
