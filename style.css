@@ -350,5 +350,6 @@ footer p {
 @media screen and (max-width: 512px) {
   .logo {
     width: 30vw;
+    padding: 2vw 0;
   }
 }/*# sourceMappingURL=style.css.map */
