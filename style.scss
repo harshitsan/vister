@@ -4,346 +4,305 @@ $small: 512px;
 
 // @media screen and (max-width: $small) {
 p {
-  margin-bottom: 0px !important;
+	margin-bottom: 0px !important;
 }
 
 * {
-  text-align: center;
-  color: #ffffff;
-  font-family: "Plus Jakarta Sans", sans-serif;
+	text-align: center;
+	color: #ffffff;
+	font-family: "Plus Jakarta Sans", sans-serif;
 }
 body {
-  background-color: #090c08 !important;
-  width: 100vw;
-  // height: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-x: hidden;
-  flex-direction: column;
-  position: relative;
-  .bg-circle-wrapper {
-    // display: none;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    width: 100vw;
-    overflow-x: hidden;
-    .bg-circle {
-      width: 40vw;
-      height: 40vw;
-      opacity: 0.56;
-      filter: blur(10vw);
-      -webkit-filter: blur(10vw);
-      // filter: blur(500px);
-      z-index: -1;
-      border-radius: 50%;
-      @media screen and (max-width: $small) {
-        width: 100vw;
-        height: 100vw;
+	background-color: #090c08 !important;
+	width: 100vw;
+	// height: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow-x: hidden;
+	flex-direction: column;
+	position: relative;
+	.bg-circle-wrapper {
+		// display: none;
+		position: absolute;
+		top: 0px;
+		bottom: 0px;
+		width: 100vw;
+		overflow-x: hidden;
+		.bg-circle {
+			width: 40vw;
+			height: 40vw;
+			opacity: 0.56;
+			filter: blur(10vw);
+			-webkit-filter: blur(10vw);
+			// filter: blur(500px);
+			z-index: -1;
+			border-radius: 50%;
+			@media screen and (max-width: $small) {
+				width: 100vw;
+				height: 100vw;
 
-        filter: blur(30vw);
-        -webkit-filter: blur(30vw);
-      }
-      &.green {
-        background: #48bf84;
-        position: absolute;
-        &.one {
-          top: -10vw;
-          right: -10vw;
-          justify-self: end;
-          align-self: baseline;
-        }
-        &.two {
-          bottom: 0vw;
-          right: -10vw;
-          justify-self: end;
-          align-self: end;
-          @media screen and (max-width: $small) {
-            display: none;
-          }
-        }
-      }
-      &.yellow {
-        background: yellow;
-        position: absolute;
-        bottom: 0vw;
-        left: -10vw;
-        justify-self: end;
-        align-self: end;
-      }
-    }
-  }
-  .label {
-    background: #353535;
-    border-radius: 0.2vw;
-    font-size: 0.6vw;
-    width: fit-content;
-    margin: auto;
-    padding: 0.5vw 0.7vw;
-    margin-top: 5vw;
-    @media screen and (max-width: $small) {
-      font-size: 2vw;
-      margin: 20vw auto 3vw auto;
-    }
-  }
-  .row {
-    width: 100%;
-    nav {
-      padding: 1vw 6vw;
-    }
-  }
-  h1.head {
-    font-size: 3vw;
-    max-width: 32vw;
-    padding: 1vw 0px 1vw 0px;
-    margin: auto;
-    font-weight: 700;
-    @media screen and (max-width: $small) {
-      font-size: 6vw;
-      max-width: 70vw;
-    }
-    & .yellow {
-      color: #ffcc00 !important;
-    }
-  }
-  p.subhead {
-    font-size: 1vw;
-    padding-top: 1vw;
-    font-weight: normal;
-    color: #9c9c9c;
-    @media screen and (max-width: $small) {
-      padding-top: 3vw;
-      font-size: 3vw;
-    }
-    span {
-      color: #ffffff;
-    }
-  }
-  .main-parent {
-    overflow-x: hidden;
-    overflow-y: clip;
-  }
-  #main {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    padding: 10vw 0;
-    @media screen and (max-width: $small) {
-      transform: translateX(7%);
-      padding: 100vw 0;
-      scale: 3;
-    }
-  }
-  .image {
-    position: absolute;
-    width: $size;
-    height: $size;
-    text-align: center;
-    @media screen and (max-width: $small) {
-      // width:150vw;
-      // height:150vw;
-      // scale: 2;
-    }
+				filter: blur(30vw);
+				-webkit-filter: blur(30vw);
+			}
+			&.green {
+				background: #48bf84;
+				position: absolute;
+				&.one {
+					top: -10vw;
+					right: -10vw;
+					justify-self: end;
+					align-self: baseline;
+				}
+				&.two {
+					bottom: 0vw;
+					right: -10vw;
+					justify-self: end;
+					align-self: end;
+					@media screen and (max-width: $small) {
+						display: none;
+					}
+				}
+			}
+			&.yellow {
+				background: yellow;
+				position: absolute;
+				bottom: 0vw;
+				left: -10vw;
+				justify-self: end;
+				align-self: end;
+			}
+		}
+	}
+	.label {
+		background: #353535;
+		border-radius: 0.2vw;
+		font-size: 0.6vw;
+		width: fit-content;
+		margin: auto;
+		padding: 0.5vw 0.7vw;
+		margin-top: 5vw;
+		@media screen and (max-width: $small) {
+			font-size: 2vw;
+			margin: 20vw auto 3vw auto;
+		}
+	}
+	.row {
+		width: 100%;
+		nav {
+			padding: 1vw 6vw;
+		}
+	}
+	h1.head {
+		font-size: 3vw;
+		max-width: 32vw;
+		padding: 1vw 0px 1vw 0px;
+		margin: auto;
+		font-weight: 700;
+		@media screen and (max-width: $small) {
+			font-size: 6vw;
+			max-width: 70vw;
+		}
+		& .yellow {
+			color: #ffcc00 !important;
+		}
+	}
+	p.subhead {
+		font-size: 1vw;
+		padding-top: 1vw;
+		font-weight: normal;
+		color: #9c9c9c;
+		@media screen and (max-width: $small) {
+			padding-top: 3vw;
+			font-size: 3vw;
+		}
+		span {
+			color: #ffffff;
+		}
+	}
+	.main-parent {
+		overflow-x: hidden;
+		overflow-y: clip;
+	}
+	#main {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		padding: 10vw 0;
+		@media screen and (max-width: $small) {
+			transform: translateX(7%);
+			padding: 100vw 0;
+			scale: 3;
+		}
+	}
+	.image {
+		position: absolute;
+		width: $size;
+		height: $size;
+		text-align: center;
+		@media screen and (max-width: $small) {
+			// width:150vw;
+			// height:150vw;
+			// scale: 2;
+		}
 
-    img {
-      transform: translate(0px, 30%);
-      width: 30%;
-    }
-  }
+		img {
+			transform: translate(0px, 30%);
+			width: 30%;
+		}
+	}
 
-  .circle2 {
-    position: absolute;
-    width: $sizeSmall;
-    height: $sizeSmall;
-    // transform: translate(5vw, 5vw);
-    text-align: center;
-    border: 1px solid #00d37f;
-    border-radius: 50%;
-    @media screen and (max-width: $small) {
-      // scale: 2;
-      scale: 1.5;
-      transform: translateX(28%);
-      border: 1px solid #00d37f;
-    }
-  }
-  #parent-circle {
-    position: relative;
-    width: $size;
-    height: $size;
-    border: 1px solid #00d37f;
-    border-radius: 50%;
-    transform: rotate(0deg);
-    transition: transform 0.7s linear;
-    animation: rotate 15s infinite linear;
-    @media screen and (max-width: $small) {
-      //   width: 150vw;
-      width: 50vw;
-      height: 50vw;
-      scale: 1.4;
-      margin-left: 38%;
-      //   animation: none;
-      //   transform: rotate(180deg);
-    }
+	.circle2 {
+		position: absolute;
+		width: $sizeSmall;
+		height: $sizeSmall;
+		// transform: translate(5vw, 5vw);
+		text-align: center;
+		border: 1px solid #00d37f;
+		border-radius: 50%;
+		@media screen and (max-width: $small) {
+			// scale: 2;
+			scale: 1.5;
+			transform: translateX(28%);
+			border: 1px solid #00d37f;
+		}
+	}
+	#parent-circle {
+		position: relative;
+		width: $size;
+		height: $size;
+		border: 1px solid #00d37f;
+		border-radius: 50%;
+		transform: rotate(0deg);
+		transition: transform 0.7s linear;
+		animation: rotate 15s infinite linear;
+		@media screen and (max-width: $small) {
+			//   width: 150vw;
+			width: 50vw;
+			height: 50vw;
+			scale: 1.4;
+			margin-left: 35.5%;
+			//   animation: none;
+			//   transform: rotate(180deg);
+		}
 
-    .circle {
-      display: block;
-      position: absolute;
-      width: 26%;
-      height: 26%;
-      margin: -13%;
-      border-radius: 50%;
-      top: 50%;
-      left: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      @media screen and (max-width: $small) {
-        width: 14%;
-        height: 14%;
-        margin: -7%;
-      }
-      .content {
-        animation: rotate 15s infinite linear;
-        animation-direction: reverse;
-        @media screen and (max-width: $small) {
-          //   animation: rotate2 15s infinite linear;
-          //   animation: none;
-        }
-        .icon {
-          margin: auto;
-          width: 3vw;
-          height: 3vw;
-          display: flex;
-          align-items: flex-end;
-          @media screen and (max-width: $small) {
-            width: 2vw;
-            height: 2vw;
-          }
-          img {
-            height: 100%;
-          }
-        }
-        .text {
-          padding: 0.5vw;
-          font-size: 1vw;
-          @media screen and (max-width: $small) {
-            font-size: 0.7vw;
-          }
-        }
-      }
-      &.blue {
-        background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
-        transform: translate($size/2); // parent $size/2
-        @media screen and (max-width: $small) {
-          // transform: translate($size/4); // parent $size/2
-          transform: rotate(115deg) translate($size/2) rotate(-115deg);
-          .content {
-            transform: rotate(-25deg);
-            // animation: rotate 15s infinite linear !important;
-          }
-        }
-      }
-      &.pink {
-        background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
-        transform: rotate(90deg) translate($size/2) rotate(-90deg);
-        @media screen and (max-width: $small) {
-          transform: rotate(160deg) translate($size/2) rotate(-160deg);
-          .content {
-            transform: rotate(-70deg);
-            // animation: rotate 15s infinite linear !important;
-          }
-        }
-      }
-      &.lime {
-        background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
-        transform: rotate(90deg * 2) translate($size/2) rotate(-90deg * 2);
-        @media screen and (max-width: $small) {
-          transform: rotate(200deg) translate($size/2) rotate(-200deg);
-          .content {
-            transform: rotate(-110deg);
-            // animation: rotate 15s infinite linear !important;
-          }
-        }
-      }
-      &.orange {
-        background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
-        transform: rotate(90deg * 3) translate($size/2) rotate(-90deg * 3);
-        @media screen and (max-width: $small) {
-          transform: rotate(240deg) translate($size/2) rotate(-240deg);
-          .content {
-            transform: rotate(-150deg);
-            // animation: rotate 15s infinite linear !important;
-          }
-        }
-      }
-      &.blue2 {
-        background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
-        transform: translate($size/2); // parent $size/2
-        display: none;
-        @media screen and (max-width: $small) {
-          display: block;
-          transform: translate($size/2); // parent $size/2
-          transform: rotate(295deg) translate($size/2) rotate(-295deg);
-          .content {
-            transform: rotate(-230deg);
-            // animation: rotate 15s infinite linear !important;
-          }
-        }
-      }
-      &.pink2 {
-        background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
-        transform: rotate(90deg) translate($size/2) rotate(-90deg);
-        display: none;
-        @media screen and (max-width: $small) {
-          display: block;
-          //   transform: translate($size/2);
-          transform: rotate(340deg) translate($size/2) rotate(-340deg);
-        }
-      }
-      &.lime2 {
-        background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
-        transform: rotate(90deg * 2) translate($size/2) rotate(-90deg * 2);
-        display: none;
-        @media screen and (max-width: $small) {
-          display: block;
-          transform: rotate(20deg) translate($size/2) rotate(-20deg);
-        }
-      }
-      &.orange2 {
-        background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
-        transform: rotate(90deg * 3) translate($size/2) rotate(-90deg * 3);
-        @media screen and (max-width: $small) {
-          transform: rotate(60deg) translate($size/2) rotate(-60deg);
-          .content {
-            transform: rotate(30deg);
-            // animation: rotate 15s infinite linear !important;
-          }
-        }
-      }
-      &.teal {
-        background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
-        transform: rotate(90deg * 4) translate($size/2) rotate(-90deg * 4);
-        @media screen and (max-width: $small) {
-          transform: rotate(210deg) translate($size/2) rotate(-210deg);
-          .content {
-            transform: rotate(-120deg);
-          }
-        }
-      }
-    }
-  }
+		.circle {
+			display: block;
+			position: absolute;
+			width: 26%;
+			height: 26%;
+			margin: -13%;
+			border-radius: 50%;
+			top: 50%;
+			left: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			@media screen and (max-width: $small) {
+				width: 14%;
+				height: 14%;
+				margin: -5%;
+			}
+			.content {
+				animation: rotate 15s infinite linear;
+				animation-direction: reverse;
+				@media screen and (max-width: $small) {
+					//   animation: rotate2 15s infinite linear;
+					//   animation: none;
+				}
+				.icon {
+					margin: auto;
+					width: 3vw;
+					height: 3vw;
+					display: flex;
+					align-items: flex-end;
+					@media screen and (max-width: $small) {
+						width: 2vw;
+						height: 2vw;
+					}
+					img {
+						height: 100%;
+					}
+				}
+				.text {
+					padding: 0.5vw;
+					font-size: 1vw;
+					@media screen and (max-width: $small) {
+						font-size: 0.7vw;
+					}
+				}
+			}
+			&.blue {
+				background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
+				transform: translate($size/2); // parent $size/2
+				@media screen and (max-width: $small) {
+					// transform: translate($size/4); // parent $size/2
+					transform: rotate(115deg) translate($size/2-2) rotate(-115deg);
+				}
+			}
+			&.pink {
+				background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
+				transform: rotate(90deg) translate($size/2) rotate(-90deg);
+				@media screen and (max-width: $small) {
+					transform: rotate(160deg) translate($size/2-1) rotate(-160deg);
+				}
+			}
+			&.lime {
+				background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
+				transform: rotate(90deg * 2) translate($size/2) rotate(-90deg * 2);
+				@media screen and (max-width: $small) {
+					transform: rotate(200deg) translate($size/2) rotate(-200deg);
+				}
+			}
+			&.orange {
+				background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
+				transform: rotate(90deg * 3) translate($size/2) rotate(-90deg * 3);
+				@media screen and (max-width: $small) {
+					transform: rotate(240deg) translate($size/2) rotate(-240deg);
+				}
+			}
+			&.blue2 {
+				background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
+				transform: translate($size/2); // parent $size/2
+				@media screen and (max-width: $small) {
+					// transform: translate($size/4); // parent $size/2
+					transform: rotate(65deg) translate($size/2-3) rotate(-65deg);
+				}
+			}
+			&.pink2 {
+				background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
+				transform: rotate(90deg) translate($size/2) rotate(-90deg);
+				@media screen and (max-width: $small) {
+					transform: rotate(15deg) translate($size/2-3) rotate(-15deg);
+				}
+			}
+			&.lime2 {
+				background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
+				transform: rotate(90deg * 2) translate($size/2) rotate(-90deg * 2);
+				@media screen and (max-width: $small) {
+					transform: rotate(280deg) translate($size/2-1) rotate(-280deg);
+				}
+			}
+			&.orange2 {
+				background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
+				transform: rotate(90deg * 3) translate($size/2) rotate(-90deg * 3);
+				@media screen and (max-width: $small) {
+					transform: rotate(320deg) translate($size/2-2) rotate(-320deg);
+				}
+			}
+		}
+	}
 }
 
 @-webkit-keyframes rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(359deg);
-  }
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(359deg);
+	}
 }
 
 // @-webkit-keyframes rotate11 {
@@ -419,30 +378,30 @@ body {
 // }
 
 footer {
-  // margin-top: 10vw;
-  background-color: #000000;
-  width: 100%;
-  padding: 2vw 6vw;
-  @media screen and (max-width: $small) {
-    padding: 3vw 6vw;
-  }
+	// margin-top: 10vw;
+	background-color: #000000;
+	width: 100%;
+	padding: 2vw 6vw;
+	@media screen and (max-width: $small) {
+		padding: 3vw 6vw;
+	}
 
-  .col {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  p {
-    font-size: 0.6vw;
-    @media screen and (max-width: $small) {
-      font-size: 2.2vw;
-      padding-top: 2vw;
-    }
-  }
+	.col {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	p {
+		font-size: 0.6vw;
+		@media screen and (max-width: $small) {
+			font-size: 2.2vw;
+			padding-top: 2vw;
+		}
+	}
 }
 .logo {
-  width: 8vw;
-  @media screen and (max-width: $small) {
-    width: 30vw;
-  }
+	width: 8vw;
+	@media screen and (max-width: $small) {
+		width: 30vw;
+	}
 }

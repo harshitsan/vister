@@ -185,7 +185,7 @@ body #parent-circle {
     width: 50vw;
     height: 50vw;
     scale: 1.4;
-    margin-left: 38%;
+    margin-left: 35.5%;
   }
 }
 body #parent-circle .circle {
@@ -205,7 +205,7 @@ body #parent-circle .circle {
   body #parent-circle .circle {
     width: 14%;
     height: 14%;
-    margin: -7%;
+    margin: -5%;
   }
 }
 body #parent-circle .circle .content {
@@ -244,10 +244,7 @@ body #parent-circle .circle.blue {
 }
 @media screen and (max-width: 512px) {
   body #parent-circle .circle.blue {
-    transform: rotate(115deg) translate(27vw) rotate(-115deg);
-  }
-  body #parent-circle .circle.blue .content {
-    transform: rotate(-25deg);
+    transform: rotate(115deg) translate(25vw) rotate(-115deg);
   }
 }
 body #parent-circle .circle.pink {
@@ -256,10 +253,7 @@ body #parent-circle .circle.pink {
 }
 @media screen and (max-width: 512px) {
   body #parent-circle .circle.pink {
-    transform: rotate(160deg) translate(27vw) rotate(-160deg);
-  }
-  body #parent-circle .circle.pink .content {
-    transform: rotate(-70deg);
+    transform: rotate(160deg) translate(26vw) rotate(-160deg);
   }
 }
 body #parent-circle .circle.lime {
@@ -270,9 +264,6 @@ body #parent-circle .circle.lime {
   body #parent-circle .circle.lime {
     transform: rotate(200deg) translate(27vw) rotate(-200deg);
   }
-  body #parent-circle .circle.lime .content {
-    transform: rotate(-110deg);
-  }
 }
 body #parent-circle .circle.orange {
   background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
@@ -282,45 +273,32 @@ body #parent-circle .circle.orange {
   body #parent-circle .circle.orange {
     transform: rotate(240deg) translate(27vw) rotate(-240deg);
   }
-  body #parent-circle .circle.orange .content {
-    transform: rotate(-150deg);
-  }
 }
 body #parent-circle .circle.blue2 {
   background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
   transform: translate(27vw);
-  display: none;
 }
 @media screen and (max-width: 512px) {
   body #parent-circle .circle.blue2 {
-    display: block;
-    transform: translate(27vw);
-    transform: rotate(295deg) translate(27vw) rotate(-295deg);
-  }
-  body #parent-circle .circle.blue2 .content {
-    transform: rotate(-230deg);
+    transform: rotate(65deg) translate(24vw) rotate(-65deg);
   }
 }
 body #parent-circle .circle.pink2 {
   background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
   transform: rotate(90deg) translate(27vw) rotate(-90deg);
-  display: none;
 }
 @media screen and (max-width: 512px) {
   body #parent-circle .circle.pink2 {
-    display: block;
-    transform: rotate(340deg) translate(27vw) rotate(-340deg);
+    transform: rotate(15deg) translate(24vw) rotate(-15deg);
   }
 }
 body #parent-circle .circle.lime2 {
   background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
   transform: rotate(180deg) translate(27vw) rotate(-180deg);
-  display: none;
 }
 @media screen and (max-width: 512px) {
   body #parent-circle .circle.lime2 {
-    display: block;
-    transform: rotate(20deg) translate(27vw) rotate(-20deg);
+    transform: rotate(280deg) translate(26vw) rotate(-280deg);
   }
 }
 body #parent-circle .circle.orange2 {
@@ -329,22 +307,7 @@ body #parent-circle .circle.orange2 {
 }
 @media screen and (max-width: 512px) {
   body #parent-circle .circle.orange2 {
-    transform: rotate(60deg) translate(27vw) rotate(-60deg);
-  }
-  body #parent-circle .circle.orange2 .content {
-    transform: rotate(30deg);
-  }
-}
-body #parent-circle .circle.teal {
-  background: linear-gradient(180deg, #000000 0%, #303030 100%), #000000;
-  transform: rotate(360deg) translate(27vw) rotate(-360deg);
-}
-@media screen and (max-width: 512px) {
-  body #parent-circle .circle.teal {
-    transform: rotate(210deg) translate(27vw) rotate(-210deg);
-  }
-  body #parent-circle .circle.teal .content {
-    transform: rotate(-120deg);
+    transform: rotate(320deg) translate(25vw) rotate(-320deg);
   }
 }
 
